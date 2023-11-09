@@ -268,7 +268,7 @@ class Authenticate:
         new_password = reset_password_form.text_input('New password', type='password')
         new_password_repeat = reset_password_form.text_input('Repeat password', type='password')
 
-        if reset_password_form.form_submit_button('Reset'):
+        if reset_password_form.form_submit_button('Change password'):
             if self._check_credentials(inplace=False):
                 if len(new_password) > 0:
                     if new_password == new_password_repeat:
